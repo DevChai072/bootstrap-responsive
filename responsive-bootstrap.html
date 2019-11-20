@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        
+        .container {
+            padding: 20px;
+            /* background-color: rgb(224, 221, 221); */
+        }
+        /* Device mobile */
+        @media (min-width: 300px) {
+            .grid-column {
+                padding: 0px;
+            }
+
+            .item-blue {
+                background-color: rgb(7, 119, 248);
+                padding: 20px;
+                border: 2px solid #ffffff;
+            }
+
+            .item-orange {
+                background-color: rgb(240, 108, 0);
+                padding: 20px;
+                border: 2px solid #ffffff;
+            }
+            
+            .item-green {
+                background-color: rgb(5, 236, 36);
+                padding: 20px;
+                border: 2px solid #ffffff;
+            }
+
+            .item-red {
+                background-color: rgb(243, 58, 1);
+                padding: 20px;
+                border: 2px solid #ffffff;
+            }
+        }
+        /* Device tablet */
+        @media (min-width: 768px) {
+            .grid-column {
+                padding: 0px;
+            }
+
+            .item-blue {
+                background-color: cornflowerblue;
+                padding: 20px;
+                border: 2px solid #ffffff;
+            }
+
+            .item-orange {
+                background-color: rgb(240, 108, 0);
+                padding: 60px;
+                border: 2px solid #ffffff;
+            }
+            
+            .item-green {
+                background-color: rgb(5, 236, 36);
+                padding: 20px;
+                border: 2px solid #ffffff;
+            }
+
+            .item-red {
+                background-color: rgb(243, 58, 1);
+                padding: 20px;
+                border: 2px solid #ffffff;
+            }
+        }
+        /* Device desktop */
+        @media (min-width: 992px) {
+            /* กำหนด div มาครอบสำหรับเพิ่มระยะห่างจากขอบ */
+            .grid-column {
+                padding: 20px;
+            }
+            /* กำหนดค่าให้กับ item */
+            .item-blue {
+                background-color: cornflowerblue;
+                padding: 20px;
+                border: 2px solid #ffffff;
+            }
+
+            .item-orange {
+                background-color: rgb(240, 108, 0);
+                padding: 80px;
+                border: 2px solid #ffffff;
+            }
+            
+            .item-green {
+                background-color: rgb(5, 236, 36);
+                padding: 60px;
+                border: 2px solid #ffffff;
+            }
+
+            .item-red {
+                background-color: rgb(243, 58, 1);
+                padding: 40px;
+                border: 2px solid #ffffff;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <!-- item blue -->
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-6 grid-column">
+                <div class="item-blue"></div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 grid-column">
+                <div class="item-blue"></div>
+            </div>
+        </div>
+        <!-- item orange -->
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 grid-column">
+                <div class="item-orange"></div>
+            </div>
+        </div>
+        <!-- item green -->
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4 grid-column">
+                <div class="item-green"></div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4 grid-column">
+                <div class="item-green"></div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4 grid-column">
+                <div class="item-green"></div>
+            </div>
+        </div>
+        <!-- item red -->
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3 grid-column">
+                <div class="item-red"></div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 grid-column">
+                <div class="item-red"></div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 grid-column">
+                <div class="item-red"></div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 grid-column">
+                <div class="item-red"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
